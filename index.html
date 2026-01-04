@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing Spend Audit & Revenue Reconciliation</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --background-color: #ecf0f1;
+            --text-color: #34495e;
+            --card-bg-color: #ffffff;
+            --shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background: var(--primary-color);
+            color: white;
+            padding: 4rem 1rem;
+            text-align: center;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.5rem;
+            color: var(--secondary-color);
+            margin-top: 1rem;
+        }
+        .hero-finding {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #e74c3c;
+        }
+        section {
+            padding: 2rem 0;
+        }
+        h2 {
+            text-align: center;
+            font-size: 2.2rem;
+            margin-bottom: 2rem;
+            color: var(--primary-color);
+        }
+        .card {
+            background: var(--card-bg-color);
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: var(--shadow);
+            margin-bottom: 2rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+        @media (min-width: 768px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        .chart-placeholder {
+            width: 100%;
+            height: 300px;
+            background: #bdc3c7;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+        pre {
+            background: #1e272e;
+            color: #d2dae2;
+            padding: 1.5rem;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9rem;
+        }
+        .btn-container {
+            text-align: center;
+            margin-top: 2rem;
+        }
+        .btn {
+            display: inline-block;
+            background: var(--secondary-color);
+            color: white;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+            margin: 0.5rem;
+            border: none;
+            cursor: pointer;
+        }
+        .btn:hover, .btn-secondary:hover {
+            background: #2980b9;
+        }
+        .btn-secondary {
+            background: #95a5a6;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+            border-top: 1px solid #dcdcdc;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Marketing Spend Audit & Revenue Reconciliation</h1>
+            <p>A data-driven deep dive to bridge the gap between marketing reports and financial reality.</p>
+            <p class="hero-finding">Key Finding: A 51% Discrepancy Between Reported & Actual Revenue</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="charts">
+            <h2>Visualizing the Discrepancy</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Reported vs. Actual Revenue</h3>
+                    <div class="chart-placeholder">[Bar Chart: Marketing Reported Revenue vs. Finance Actual Revenue]</div>
+                    <p>This chart illustrates the critical finding of the audit: a massive 51% gap between the revenue claimed by marketing platforms and the actual revenue recorded in financial statements.</p>
+                </div>
+                <div class="card">
+                    <h3>Channel ROI (Actual)</h3>
+                    <div class="chart-placeholder">[Bar Chart: Return on Investment by Marketing Channel]</div>
+                    <p>After reconciling the data, the true performance of each channel was revealed. SEO and SEM proved to be highly profitable, while Display and Social channels showed a negative return.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="structure">
+            <h2>Project Structure</h2>
+            <div class="card">
+                <p>The project was organized into distinct directories for data, notebooks, queries, and reports, ensuring a clean and reproducible workflow.</p>
+                <pre>
+/
+├── .gitignore
+├── README.md
+├── index.html
+├── requirements.txt
+├── dashboard/
+│   └── .gitkeep
+├── data/
+│   ├── funnel_events.csv
+│   ├── marketing_spend.csv
+│   ├── ...
+├── docs/
+│   └── case_study.md
+├── notebooks/
+│   ├── 01_eda.ipynb
+│   ├── ...
+│   └── 04_reconciliation.ipynb
+├── reports/
+│   └── executive_summary.md
+├── sql/
+│   ├── dashboard_queries.sql
+│   └── ...
+└── src/
+    └── audit_utils.py
+                </pre>
+            </div>
+        </section>
+
+        <section id="demo">
+            <h2>Live Demo & Source</h2>
+            <div class="card btn-container">
+                <p>Explore the findings in more detail through the live dashboard and review the complete source code on GitHub.</p>
+                <a href="#" class="btn">View Live Dashboard</a>
+                <a href="#" class="btn btn-secondary">View on GitHub</a>
+            </div>
+        </section>
+
+        <section id="downloads">
+            <h2>Downloads</h2>
+            <div class="card btn-container">
+                <p>Download the executive summary for a high-level overview or the full project source to explore the analysis yourself.</p>
+                <a href="reports/executive_summary.md" class="btn" download>Download Report (MD)</a>
+                <a href="#" class="btn btn-secondary">Download Project (ZIP)</a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Project Landing Page. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

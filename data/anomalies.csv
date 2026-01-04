@@ -1,0 +1,12 @@
+user_id,channel,issue_type,severity,variance
+U111,LinkedIn,"Duplicate + Missing Invoice",CRITICAL,500
+U117,Meta,"Missing Invoice",HIGH,275
+U121,LinkedIn,"Missing Invoice",HIGH,400
+U127,LinkedIn,"Missing Invoice",HIGH,400
+U128,Google,"Missing Invoice",MEDIUM,300
+U129,Meta,"Missing Invoice",MEDIUM,250
+U130,LinkedIn,"Missing Invoice",HIGH,400
+U131,Google,"Missing Invoice",MEDIUM,300
+U132,Meta,"Missing Invoice",MEDIUM,250
+U133,LinkedIn,"Missing Invoice",HIGH,400
+U134,Google,"Missing Invoice",LOW,165
